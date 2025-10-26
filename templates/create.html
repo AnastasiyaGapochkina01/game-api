@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Создание персонажа</title>
+<style>
+body {
+  background-color: #0b0014;
+  color: #c084fc;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+form {
+  border: 2px solid #8b5cf6;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #a855f7;
+}
+input, select {
+  background-color: #1f0936;
+  color: #c084fc;
+  border: 1px solid #8b5cf6;
+  padding: 8px;
+  margin: 6px 0;
+  width: 100%;
+}
+button {
+  background-color: #7e22ce;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #a855f7;
+}
+button:hover {
+  background-color: #9333ea;
+}
+</style>
+</head>
+<body>
+  <form method="POST" action="/create">
+    <h2>Создай своего персонажа</h2>
+    <label>Имя:</label><br>
+    <input type="text" name="name" required><br>
+    <label>Класс:</label><br>
+    <select name="class">
+      <option>Воин</option>
+      <option>Маг</option>
+      <option>Лучник</option>
+    </select><br>
+    <label>Уровень:</label><br>
+    <input type="number" name="level" value="1" min="1"><br>
+    <button type="submit">Создать</button>
+  </form>
+</body>
+</html>
+

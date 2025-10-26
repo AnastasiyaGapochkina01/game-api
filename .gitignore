@@ -1,0 +1,3 @@
+consumer/Dockerfile
+scraper/Dockerfile
+orig_compose.yml

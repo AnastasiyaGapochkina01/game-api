@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Главная ‒ RPG</title>
+<style>
+body {
+  background: #0b0014;
+  height: 100vh;
+  margin: 0; display: flex; flex-direction: column; justify-content: center; align-items: center;
+}
+h1 {
+  color: #c084fc;
+  text-shadow: 0 0 12px #a855f7;
+  margin-bottom: 60px;
+  font-size: 2.5rem;
+}
+.btn {
+  display: block;
+  background: #7e22ce;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  margin: 22px 0 0 0;
+  width: 270px;
+  padding: 24px 0;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 0 22px #b78afc;
+  text-decoration: none;
+  text-align: center;
+}
+.btn:hover {
+  background: #9333ea;
+  box-shadow: 0 0 40px #8b5cf6;
+}
+</style>
+</head>
+<body>
+  <h1>RPG API ‒ Главная</h1>
+  <a class="btn" href="/create">Создать персонажа</a>
+  <a class="btn" href="/list">Посмотреть всех персонажей</a>
+</body>
+</html>
+
